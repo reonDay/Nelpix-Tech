@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/png" sizes="32x32" href="images/logo.png">
+
+    <title>Nelpix Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <img src="images/loading.gif" alt="Loading...">
+    </div>
+    <div class="whatsapp-icon">
+        <a href="https://wa.me/1234567890" target="_blank">
+            <img src="images/wa.jpeg" alt="WhatsApp">
+        </a>
+    </div>
+    <header>
+        <nav>
+            <img src="images/logo2.png" alt="Nelpix Tech Logo" class="logo">
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul id="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="section">
+        <div class="container">
+            <h1 style="font-size: 3.5rem;">Nelpix Tech</h1>
+            <p style="font-size: 1.5rem;">Leading AI solutions for Health and Medical sectors</p>
+            <button onclick="scrollToSection('services')">Learn More</button>
+        </div>
+    </section>
+    
+
+    <section id="home" class="section">
+        <div class="container">
+            <h1>Welcome to Nelpix Tech</h1>
+            <p>Your partner in innovative AI solutions for Health and Medical fields.</p>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h1>Our Services</h1>
+            <div class="services">
+                <div class="service">
+                    <img src="images/s1.png" alt="AI for Health">
+                    <h3>AI for Health</h3>
+                    <p>Advanced AI solutions to improve health outcomes and patient care.</p>
+                </div>
+                <div class="service">
+                    <img src="images/s2.png" alt="AI for Medical">
+                    <h3>AI for Medical</h3>
+                    <p>Cutting-edge AI technology for medical research and diagnosis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="section">
+        <div class="container">
+            <h1>Our Products</h1>
+            <div class="products">
+                <div class="product">
+                    <img src="images/detection-tumor.png" alt="Product 1">
+                    <h3>AI Brain Tumor Detect</h3>
+                    <p>
+                        Brain Tumor Detection AI is created with the CNN algorithm. The aim of this AI is to detect brain tumors more quickly so that the treatment of patients whose brain tumors are detected can be handled</p>
+                </div>
+                <div class="product">
+                    <img src="images/lung-cancer-prediction.png" alt="Product 2">
+                    <h3>AI Lung Cancer Prediction</h3>
+                    <p>
+                        Lung Cancer Prediction AI is an AI that aims to predict lung cancer more quickly and efficiently so that cancer treatment can be treated early before it becomes malignant.</p>
+                </div>
+                <div class="product">
+                    <img src="images/diabetes-prediction.png" alt="Product 3">
+                    <h3>AI Diabetes Prediction</h3>
+                    <p>AI Diabetes Prediction aims to help someone find out whether they have diabetes early so they can avoid more serious diabetes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal for displaying product details -->
+<div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImg" src="" alt="Product Image">
+      <div id="modalText" class="modal-text">
+        <h2 id="modalTitle">Product Title</h2>
+        <p id="modalDescription">Product Description</p>
+      </div>
+    </div>
+  </div>
+  
+    
+
+    <section id="about" class="section">
+        <div class="container">
+            <h1>About Us</h1>
+            <div class="card">
+                <img src="images/a1.png" alt="AI for Medical">
+                <h3>Nelpix Tech</h3>
+                <p>Nelpix Tech is a pioneering company specializing in artificial intelligence solutions tailored for the health and medical sectors. We are committed to advancing healthcare through innovative technologies that enhance patient care, medical research, and diagnosis.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Nelpix Tech. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://facebook.com/nelpixtech" target="_blank"><img src="images/fb.jpeg" alt="Facebook"></a>
+                <a href="https://twitter.com/nelpixtech" target="_blank"><img src="images/x.jpeg" alt="Twitter"></a>
+                <a href="https://instagram.com/nelpixtech" target="_blank"><img src="images/ig.jpeg" alt="Instagram"></a>
+                <!-- Ganti link dan gambar ikon sosial media dengan yang sesuai -->
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
